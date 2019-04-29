@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="300.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="제       목" />
+                  <TextField fx:id="tf_title" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="작  성  자" />
+                  <TextField fx:id="tf_writer" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="200.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <Label text="내       용">
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </Label>
+                  <TextArea fx:id="ta_content" prefHeight="200.0" prefWidth="270.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <padding>
+      <Insets left="20.0" />
+   </padding>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btn_insert" mnemonicParsing="false" text="등록하기" />
+            <Button fx:id="btn_again" mnemonicParsing="false" text="다시입력" />
+            <Button fx:id="btn_revoke" mnemonicParsing="false" text="작성취소" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

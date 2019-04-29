@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ibatis.board.dao.BoardDaoImpl">
+   <center>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="numCol" prefWidth="70.0" resizable="false" text="번호" />
+          <TableColumn fx:id="titleCol" prefWidth="290.0" resizable="false" text="제목" />
+            <TableColumn fx:id="writerCol" prefWidth="120.0" resizable="false" text="글쓴이" />
+            <TableColumn fx:id="dateCol" prefWidth="120.0" resizable="false" text="작성날짜" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="cb_search" prefWidth="90.0" />
+            <TextField fx:id="tf_search" prefWidth="180.0" />
+            <Button fx:id="btn_search" mnemonicParsing="false" prefWidth="60.0" text="검색" />
+            <Button fx:id="btn_write" mnemonicParsing="false" prefWidth="60.0" text="글쓰기" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

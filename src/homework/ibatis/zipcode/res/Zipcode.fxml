@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane fx:controller="ibatis.zipcode.dao.ZipcodeDaoImpl" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox alignment="CENTER" prefHeight="26.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="cmb_sel" prefWidth="100.0"/>
+            <TextField fx:id="tf_sel" />
+            <Button fx:id="btn_search" mnemonicParsing="false" text="검색" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="tableView" prefHeight="374.0" prefWidth="372.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="zipcodeCol" prefWidth="75.0" text="우편번호" />
+          <TableColumn fx:id="sidoCol" prefWidth="75.0" text="시도" />
+            <TableColumn fx:id="gugunCol" prefWidth="75.0" text="구군" />
+            <TableColumn fx:id="dongCol" prefWidth="75.0" text="동" />
+            <TableColumn fx:id="bunjiCol" prefWidth="75.0" text="번지" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
