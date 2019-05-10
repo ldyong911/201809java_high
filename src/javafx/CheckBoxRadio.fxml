@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="540.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="이름 :" />
+      <TextField layoutX="58.0" layoutY="10.0" />
+      <Label layoutX="14.0" layoutY="47.0" text="성별 :" />
+      <RadioButton layoutX="58.0" layoutY="47.0" mnemonicParsing="false" selected="true" text="남" />
+      <RadioButton layoutX="111.0" layoutY="47.0" mnemonicParsing="false" text="여" />
+      <Label layoutX="14.0" layoutY="78.0" text="취미 :" />
+      <CheckBox layoutX="58.0" layoutY="78.0" mnemonicParsing="false" text="여행" />
+      <CheckBox layoutX="111.0" layoutY="78.0" mnemonicParsing="false" text="등산" />
+      <CheckBox layoutX="163.0" layoutY="78.0" mnemonicParsing="false" text="독서" />
+      <CheckBox layoutX="214.0" layoutY="78.0" mnemonicParsing="false" text="바둑" />
+      <CheckBox layoutX="265.0" layoutY="78.0" mnemonicParsing="false" text="장기" />
+      <CheckBox layoutX="317.0" layoutY="78.0" mnemonicParsing="false" text="게임" />
+      <CheckBox layoutX="369.0" layoutY="78.0" mnemonicParsing="false" text="테니스" />
+      <CheckBox layoutX="432.0" layoutY="78.0" mnemonicParsing="false" text="배드민턴" />
+      <Button layoutX="14.0" layoutY="106.0" mnemonicParsing="false" text="보  기" />
+      <TextArea layoutX="14.0" layoutY="143.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
